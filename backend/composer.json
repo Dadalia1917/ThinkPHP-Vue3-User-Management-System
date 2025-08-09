@@ -1,0 +1,53 @@
+{
+    "name": "user-management/backend",
+    "description": "用户管理系统后端API",
+    "type": "project",
+    "keywords": [
+        "thinkphp",
+        "api",
+        "user-management"
+    ],
+    "homepage": "https://www.thinkphp.cn/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Developer",
+            "email": "developer@example.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0",
+        "topthink/framework": "^8.0.0",
+        "topthink/think-orm": "^3.0",
+        "topthink/think-captcha": "^3.0",
+        "firebase/php-jwt": "^6.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "psr-0": {
+            "": "extend/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "topthink/think-installer": true
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "echo 'Autoload generated successfully'"
+        ]
+    }
+}

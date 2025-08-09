@@ -1,0 +1,33 @@
+{
+  "name": "user-management-uniapp",
+  "version": "1.0.0",
+  "description": "用户管理系统 - UniApp移动端",
+  "main": "main.js",
+  "scripts": {
+    "dev:app": "uni build --watch",
+    "dev:h5": "uni -p h5",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "dev:mp-alipay": "uni -p mp-alipay",
+    "build:app": "uni build",
+    "build:h5": "uni build -p h5",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "build:mp-alipay": "uni build -p mp-alipay"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^3.0.0",
+    "@dcloudio/uni-mp-weixin": "^3.0.0",
+    "@dcloudio/uni-h5": "^3.0.0"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli": "^3.0.0",
+    "@dcloudio/webpack-uni-mp-loader": "^3.0.0",
+    "@dcloudio/webpack-uni-pages-loader": "^3.0.0"
+  },
+  "browserslist": [
+    "Android >= 4.4",
+    "ios >= 9"
+  ],
+  "uni-app": {
+    "scripts": {}
+  }
+}
